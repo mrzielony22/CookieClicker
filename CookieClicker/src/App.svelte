@@ -1,19 +1,14 @@
 <script lang="ts">
-	export let name: string;
+	import GameLayout from './components/gameLayout.svelte'
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<GameLayout/>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+	* {
+        margin:0px;
+        height:100vh;
+    }
 
 	h1 {
 		color: #ff3e00;
