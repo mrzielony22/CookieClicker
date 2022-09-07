@@ -5,16 +5,9 @@
 <GameLayout/>
 
 <style>
-	* {
-        margin:0px;
-        height:100vh;
-    }
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+	:global(body) {
+		background-color: #3c3c3c;
+		transition: background-color 0.3s
 	}
 
 	@media (min-width: 640px) {

@@ -1,10 +1,12 @@
 <script lang="ts">
-    import Cookie from './cookie.svelte'
+    import Cookie from './cookiComponents/cookie.svelte'
+    import CookieHeader from './cookiComponents/cookieHeader.svelte'
 </script>
 
 
 <div class="game-container">
-    <div class="grid-item cookie-container">
+    <div class="grid-item cookie-container cookie-background">
+        <CookieHeader/>
         <Cookie/>
     </div>
     <div class="grid-item"></div>
@@ -15,15 +17,21 @@
     .game-container{
         height: 100%;
         display: grid;
-        grid-template-columns: 30% 40% 30%;
+        grid-template-columns: 25% 45% 30%;
     }
     .grid-item{
-        background-color: white;
         border: 1px solid green;
     }
     .cookie-container{
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 3px groove brown;
+    }
+    .cookie-background{
+        background-image: url('./coo.png');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
     }
 </style>
